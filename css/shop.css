@@ -78,6 +78,11 @@
   overflow: hidden;
   text-align: center;
   box-shadow: 10px -1px 20px 9px rgb(199 194 173 / 14%);
+  transition: transform 0.4s ease;
+}
+
+.cat_list:hover {
+  transform: scale(1.03);
 }
 
 .cat_list > * {
