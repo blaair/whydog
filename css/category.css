@@ -1,0 +1,149 @@
+.category {
+  width: 100%;
+  margin-top: 130px;
+  display: inline-flex;
+}
+
+.category_filter {
+  display: inline-block;
+  width: 15%;
+  /* padding: 20px 20px 0 20px; */
+  text-align: center;
+}
+
+.cat_name {
+  text-align: center;
+  width: 110px;
+  padding-top: 70px;
+  padding-bottom: 15px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  color: rgb(61, 61, 61);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center 15px;
+  transform: translateX(0);
+  transition: transform 0.35s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cat_name.pet_food {
+  background-image: url('../images/pet-food.svg');
+}
+
+.cat_name.bone {
+  background-image: url('../images/bone.svg');
+}
+
+.cat_name.pills {
+  background-image: url('../images/pills.svg');
+}
+
+.cat_name.dress {
+  background-image: url('../images/dog_dress.svg');
+}
+
+.cat_name.toys {
+  background-image: url('../images/toys.svg');
+}
+
+.cat_name:hover {
+  background-color: rgb(241, 123, 87);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  transform: translateX(-10px);
+  transition: transform 0.35s ease-in-out;
+}
+
+.category_content {
+  position: relative;
+  width: 85%;
+  display: inline-block;
+}
+
+.category_area {
+  border-collapse: collapse;
+}
+
+.cat_list {
+  width: 256px;
+  height: 390px;
+  margin: 0 20px 40px 20px;
+  display: inline-block;
+  border-radius: 40px;
+  /* background-color: rgb(255, 254, 254); */
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 10px -1px 20px 9px rgb(199 194 173 / 14%);
+}
+
+.cat_list > * {
+  display: table-row;
+}
+
+.cat_img {
+  width: 200px;
+  overflow: hidden;
+}
+
+.cat_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cat_title,
+.cat_weight,
+.cat_price {
+  display: block;
+}
+
+.cat_title {
+  height: 40px;
+  line-height: 1.4;
+  color: rgb(65, 65, 65);
+  font-size: 17px;
+  padding: 10px 13px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cat_weight {
+  font-size: 17px;
+  color: rgb(139, 139, 139);
+}
+
+.cat_price {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(75, 73, 73);
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-flex;
+}
+
+.pagination a {
+  padding: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin: 0 5px;
+  text-align: center;
+  color: rgb(151, 151, 151);
+  background-color: rgb(219, 219, 219);
+  box-shadow: 10px -1px 20px 9px rgb(199 194 173 / 14%);
+}
